@@ -6,7 +6,11 @@ import org.openqa.selenium.support.ui.Wait;
 public class CampusLogin extends BasePage{
 
 
-    public CampusLogin(WebDriver driver, Wait wait) {
-        super(driver, wait);
+    public CampusLogin(WebDriver driver) {
+        super(driver);
+    }
+
+    protected CampusLogin(BasePage page) {
+        super(page);
     }
 }
