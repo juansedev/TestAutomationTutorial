@@ -14,7 +14,8 @@ public class BaseTests {
     @Parameters("browser")
     @BeforeMethod
     public void setUp(String browser) {
-        String url = "https://campusvirtual.univalle.edu.co/moodle/";
+        //String url = "https://campusvirtual.univalle.edu.co/moodle/";
+        String url = "https://veterinaria-acme.herokuapp.com/";
         driver = DriverFactory.getDriver(browser);
         driver.get(url);
     }

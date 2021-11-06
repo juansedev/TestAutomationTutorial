@@ -36,7 +36,7 @@ public class BrowserActions {
      * @param element
      * @param msgLog
      */
-    public void clickElement(WebElement element, String msgLog) {
+    public void clickElement(WebElement element) {
         waits.waitForCondition(Constants.TIMEOUT_30_SEC, ExpectedConditions.visibilityOf(element));
         waits.waitForCondition(Constants.TIMEOUT_30_SEC,ExpectedConditions.elementToBeClickable(element));
         element.click();
@@ -46,9 +46,8 @@ public class BrowserActions {
      *
      * @param element
      * @param content
-     * @param msgLog
      */
-    public void setElementText(WebElement element, String content,String msgLog) {
+    public void sendKeys(WebElement element, String content) {
         waits.waitForCondition(Constants.TIMEOUT_30_SEC, ExpectedConditions.visibilityOf(element));
         element.sendKeys(content);
     }

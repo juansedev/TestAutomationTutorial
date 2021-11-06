@@ -9,6 +9,7 @@ public class LoginTest extends BaseTests {
     @Test
     public void loginTest() {
         CampusLogin campusLogin = new CampusLogin(getDriver());
+        campusLogin.loginCampus("andres.celis@correounivalle.edu.co", "superusuario");
         System.out.println("Abriendo navegador");
     }
 }
