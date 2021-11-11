@@ -1,8 +1,8 @@
-package selenium.test.login;
+package selenium.test.test.login;
 
 import org.testng.annotations.Test;
-import selenium.page.CampusLogin;
-import selenium.test.BaseTests;
+import selenium.test.page.CampusLogin;
+import selenium.test.test.BaseTests;
 
 public class LoginTest extends BaseTests {
 
