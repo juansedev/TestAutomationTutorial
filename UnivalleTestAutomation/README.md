@@ -33,7 +33,7 @@ Es decir es en este paquete donde se van a crear las páginas y sus interaccione
     │   │           │   BrowserActions.java
     │   │           │   DriverFactory.java
     │   │           │   Waits.java
-    │   │           └───utils
+    │   │           └───selenium.test.utils
     │   │                   Constants.java
     │   └───resources
     └───test
