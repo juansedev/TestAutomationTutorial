@@ -15,7 +15,6 @@ public class CampusLogin extends BasePage{
     @FindBy( xpath = "//span[contains(text(), 'Login')]")
     private WebElement loginButton;
 
-
     public CampusLogin(WebDriver driver) {
         super(driver);
     }

@@ -3,14 +3,14 @@
 	<test name="ChromeTest">
 		<parameter name="browser" value= "" />
 		<classes>
-			<class name="selenium.test.test.login.PruebaTest" />
+			<class name="selenium.test.test.login.PruebaDriverManagerTest" />
 		</classes>
 	</test>
 
 	<test name="EdgeTest">
 		<parameter name="browser" value="EDGE" />
 		<classes>
-			<class name="selenium.test.test.login.PruebaTest" />
+			<class name="selenium.test.test.login.PruebaDriverManagerTest" />
 		</classes>
 	</test>
 </suite>

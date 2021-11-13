@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import selenium.test.page.CampusLogin;
 import selenium.core.base.BaseTestsWebDriverManager;
 
-public class PruebaTest extends BaseTestsWebDriverManager {
+public class PruebaDriverManagerTest extends BaseTestsWebDriverManager {
 
     @DataProvider(name = "dataProvider", parallel = true)
     public Object[][] usersProvider() {
