@@ -3,9 +3,10 @@ package selenium.test.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import selenium.core.BrowserActions;
+import selenium.core.Logging;
 import selenium.core.Waits;
 
-public class BasePage {
+public class BasePage implements Logging {
 
     private final WebDriver driver;
     private final Waits waits;

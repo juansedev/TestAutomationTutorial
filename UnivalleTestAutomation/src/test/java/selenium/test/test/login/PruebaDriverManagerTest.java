@@ -2,7 +2,7 @@ package selenium.test.test.login;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import selenium.test.page.CampusLogin;
+import selenium.test.page.veterinaria.VeterinariaLogin;
 import selenium.core.base.BaseTestsWebDriverManager;
 
 public class PruebaDriverManagerTest extends BaseTestsWebDriverManager {
@@ -21,8 +21,8 @@ public class PruebaDriverManagerTest extends BaseTestsWebDriverManager {
         dataProvider = "dataProvider"
     )
     public void loginTest(String user, String password) {
-        CampusLogin campusLogin = new CampusLogin(getDriver());
-        campusLogin.loginCampus(user,password );
+        VeterinariaLogin veterinariaLogin = new VeterinariaLogin(getDriver());
+        veterinariaLogin.loginCampus(user,password );
         System.out.println("Abriendo navegador");
     }
 }

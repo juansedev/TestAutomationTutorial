@@ -52,4 +52,13 @@ public class BrowserActions {
         element.sendKeys(content);
     }
 
+    /**
+     *
+     * @param element
+     */
+    public String getText(WebElement element) {
+        waits.waitForCondition(Constants.TIMEOUT_30_SEC, ExpectedConditions.visibilityOf(element));
+        return element.getText();
+    }
+
 }

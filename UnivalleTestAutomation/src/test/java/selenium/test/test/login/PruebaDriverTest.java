@@ -2,7 +2,7 @@ package selenium.test.test.login;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import selenium.test.page.CampusLogin;
+import selenium.test.page.veterinaria.VeterinariaLogin;
 import selenium.core.base.BaseTestsChromeDriver;
 
 
@@ -24,7 +24,7 @@ public class PruebaDriverTest extends BaseTestsChromeDriver {
     )
     public void loginTest(String user, String password) {
         getLogger().info("Iniciando session");
-        CampusLogin campusLogin = new CampusLogin(getDriver());
-        campusLogin.loginCampus(user,password );
+        VeterinariaLogin veterinariaLogin = new VeterinariaLogin(getDriver());
+        veterinariaLogin.loginCampus(user,password );
     }
 }

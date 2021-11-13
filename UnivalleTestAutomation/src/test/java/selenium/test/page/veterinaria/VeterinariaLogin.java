@@ -1,10 +1,11 @@
-package selenium.test.page;
+package selenium.test.page.veterinaria;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import selenium.test.page.BasePage;
 
-public class CampusLogin extends BasePage{
+public class VeterinariaLogin extends BasePage {
 
     @FindBy( css = "input[type='email']")
     private WebElement emailInput;
@@ -15,11 +16,11 @@ public class CampusLogin extends BasePage{
     @FindBy( xpath = "//span[contains(text(), 'Login')]")
     private WebElement loginButton;
 
-    public CampusLogin(WebDriver driver) {
+    public VeterinariaLogin(WebDriver driver) {
         super(driver);
     }
 
-    protected CampusLogin(BasePage page) {
+    protected VeterinariaLogin(BasePage page) {
         super(page);
     }
 

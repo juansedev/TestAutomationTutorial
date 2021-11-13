@@ -10,7 +10,9 @@ import selenium.core.Logging;
 
 public class BaseTestsChromeDriver implements Logging {
 
-    private static String url = "https://veterinaria-acme.herokuapp.com/";
+    //private static String url = "https://veterinaria-acme.herokuapp.com/";
+    private static String url = "https://campusvirtual.univalle.edu.co/moodle/";
+
     private WebDriver driver;
 
 
@@ -19,10 +21,7 @@ public class BaseTestsChromeDriver implements Logging {
         System.setProperty("webdriver.chrome.driver",
                 "src/test/resources/chromedriver_win32_95_4638_69/chromedriver.exe");
         getLogger().info("Generando un driver para Chrome");
-        getLogger().debug("debug");
-        getLogger().error("error");
-        getLogger().info("info");
-        getLogger().error("Estableciendo URL: " + url);
+        getLogger().info("Estableciendo URL: " + url);
         driver = new ChromeDriver();
         driver.get(url);
     }
